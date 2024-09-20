@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    inset: 4px;
+    position: absolute;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex
+    flex-direction: column;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in;
+}
+.container{
+    
+position: relative;
+width: 380px;
+height: 420px;
+background: #10c7ff;
+border-radius: 8px;
+}
+.container form{
+position: absolute;
+inset: 4px;
+background:#161f1f;
+backdrop-filter: blur(10px);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+border-radius: 8px;
+z-index: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+input {
+    width: 350px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1px solid #6a11cb;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5b92f0;
+}
+
+
+.container
+{
+position: relative;
+width: 380px;
+height: 420px;
+background: #1c1c1c;
+backdrop-filter: blur(10px);
+border-radius: 8px;
+overflow: hidden;
+}
+
+.container::before
+{
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 380px;
+height: 420px;
+background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+z-index: 1;
+transform-origin: bottom right;
+animation: animate 6s linear infinite;
+}
+
+.container::after
+{
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 380px;
+height: 420px;
+background: linear-gradient(0deg, transparent, transparent,#45f3ff, #45f3ff, #45f3ff);
+z-index: 1;
+transform-origin: bottom right;
+animation: animate 6s linear infinite;
+animation-delay: -3s;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
